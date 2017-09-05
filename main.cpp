@@ -204,16 +204,7 @@ void print_vec(VecInt V)
 
 int main()
 {
-	//MatDoub A(4,4);
-	//Doub elements = 0.;
-	//for (int i = 0; i < 4; i++) {
-		//for (int j = 0; j < 4; j++) {
-			//elements = elements + 1.;
-			//A[i][j] = elements;
-		//}
-	//}
 	const Int n = 3;
-	
 	MatDoub AA(n,n);
 	AA[0][0] = 1;
 	AA[0][1] = 2;
@@ -226,6 +217,7 @@ int main()
 	AA[2][2] = 13;
 
 	
+	//const Int n = 4;
 	//MatDoub AA(n,n);
 	//AA[0][0] = 2;
 	//AA[0][1] = -6;
@@ -269,14 +261,14 @@ int main()
 	cin.get();
 	
 
-	//cout<<"Vector b:"<<endl;
-	//print_vec(b);
-	//cin.get(); 
+	cout<<"Vector b:"<<endl;
+	print_vec(b);
+	cin.get(); 
 
 	//cout<<"Size of Indx: "<<my_ludcmp.indx.size()<<endl; //depends on how often we interchanged rows
-	cout<<"Indx: "<<endl;
-	print_vec(my_ludcmp.indx);
-	cin.get();
+	//cout<<"Indx: "<<endl;
+	//print_vec(my_ludcmp.indx);
+	//cin.get();
 	
 	
 	//cout<<(my_ludcmp.lu[0][0])<<endl;
@@ -289,13 +281,13 @@ int main()
 	//cout<<(my_ludcmp.lu[2][1])<<endl;
 	//cout<<(my_ludcmp.lu[2][2])<<endl;
 	//cin.get();
-	cout<<(my_ludcmp.vv[0])<<endl;
-	cout<<(my_ludcmp.vv[1])<<endl;
-	cout<<(my_ludcmp.vv[2])<<endl;
-	cout<<(x[0])<<endl;
-	cout<<(x[1])<<endl;
-	cout<<(x[2])<<endl;		
-	cin.get();	
+	//cout<<(my_ludcmp.vv[0])<<endl;
+	//cout<<(my_ludcmp.vv[1])<<endl;
+	//cout<<(my_ludcmp.vv[2])<<endl;
+	//cout<<(x[0])<<endl;
+	//cout<<(x[1])<<endl;
+	//cout<<(x[2])<<endl;		
+	//cin.get();	
 
 	
 	cout<<"LU decomposition:"<<endl;
@@ -304,8 +296,8 @@ int main()
 	cout<<"Vector x:"<<endl;
 	print_vec(x);
 	cout<<endl;
-	cout<<"Vector P:"<<endl;
-	print_vec(my_ludcmp.P);
+	cout<<"Matrix P:"<<endl;
+	print_mat(my_ludcmp.P);
 
 	cin.get();
 	
